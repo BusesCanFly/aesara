@@ -1,0 +1,9 @@
+project: aesara
+
+target: fuzz_aesara
+
+image: ghcr.io/busescanfly/aesara:latest
+
+cmds:
+    - cmd: /src/mayhem/fuzz_aesara.py
+      libfuzzer: true
